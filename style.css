@@ -1,0 +1,14 @@
+#cantidades{
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  font-size: 10px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  top: 30px;
+  right: 370px;
+  color: white;
+}
