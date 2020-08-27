@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/681afa3c5b.js" crossorigin="anonymous"></script>
+  <script src="contador.js"></script>
+  <title>Carrito</title>
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light d-flex">
+    <a class="navbar-brand" href="#">M-commerce</a>
+    <div>
+    <a class="navbar-brand" href="#">Shop</a>
+    <a class="navbar-brand" href="#">Contact</a>
+    <a class="navbar-brand" href="#">Sign In</a>
+    <a class="btn btn-outline-primary shadow" href="#" style="border-radius: 40px;">Register</a>
+    </div>
+  </nav>
+  <!-- Titulo -->
+  <div class="text-center mt-4 ">
+    <h3 id="">Shopping Cart</h3>
+  </div>
+  <!-- /Titulo -->
+  <!-- Contenedor Principal-->
+  <div class="container mt-4">
+
+    <!-- Div con flex -->
+      <div class="d-flex"> 
+        <!-- Cards-->
+        <div class="contenedor-cards bg-white mr-4">
+          <!-- Primera card -->
+
+          <div class="card mb-1 " style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-3 mt-4 mb-2 rounded">
+                <img src="https://media.sivasdescalzo.com/media/catalog/product/7/1/710689372001_sivasdescalzo-Polo_Ralph_Lauren-M_CLASSICS_LONG_SLEEVE_SPORT_SHIRT-1579093861-1.jpg?quality=90&fit=bounds&width=420" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <div class="d-flex bd-highlight ">
+                  <h5 class="card-title mr-4 bd-highlight w-100">Blue denim shirt</h5>
+                  <!-- Botones  + y --->
+                  <ul class="pagination pagination-sm ml-4">
+                    <li class="page-item" id="-"><a class="page-link text-muted" href="#">-</a></li>
+                    <li class="page-item"><a class="page-link text-muted" id="cantidad">1</a></li>
+                    <li class="page-item" id="+"><a class="page-link text-muted" href="#">+</a></li>
+                  </ul>
+                  <!-- /Botones  + y --->
+                  </div>
+                  <p class="card-text bg-grey small">SHIRT -T BLUE</p>
+                  <p class="card-text small">COLOR BLUE</p>
+                  <p class="card-text small">SIZE M</p>
+                  <div class="botones d-flex">
+                    <a href=""><p class="card-text mr-2"><small class="text-muted"> <i class="far fa-trash-alt"></i> REMOVE ITEM</small></p> </a>
+                    <a href=""> <p class="card-text"><small class="text-muted"><i class="fas fa-heart"></i> MOVE TO WISH LIST</small></p> </a>
+                    <p class="ml-4"><strong>$35.99</strong></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/Primera card -->
+          <!-- Segunda card -->
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-3 mt-4 rounded">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/41RnAglTvxL.jpg" class="card-img rounded" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <div class="d-flex bd-highlight ">
+                    <h5 class="card-title mr-4 bd-highlight w-100">Red Hoddie</h5>
+                    <!-- Botones  + y --->
+                    <ul class="pagination pagination-sm ml-4">
+                      <li class="page-item" id="--"><a class="page-link text-muted" href="#">-</a></li>
+                      <li class="page-item"><a class="page-link text-muted" id="cantidad2">1</a></li>
+                      <li class="page-item" id="++"><a class="page-link text-muted" href="#">+</a></li>
+                    </ul>
+                    <!-- /Botones  + y --->
+                    </div>
+                  <p class="card-text bg-grey small">HOODIE-RED</p>
+                  <p class="card-text small">COLOR RED</p>
+                  <p class="card-text small">SIZE M</p>
+                  <div class="botones d-flex">
+                    <a href=""><p class="card-text mr-2"><small class="text-muted"> <i class="far fa-trash-alt"></i> REMOVE ITEM</small></p> </a>
+                    <a href=""> <p class="card-text"><small class="text-muted"><i class="fas fa-heart"></i> MOVE TO WISH LIST</small></p> </a>
+                    <p class="ml-4"><strong>$35.99</strong></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/Segunda card -->
+
+        </div>
+        <!-- /Cards-->
+
+        <!-- /Cuenta y acordeon -->
+        <div class="cuenta d-flex-column" >
+          <div class="bg-white border-raious shadow p-3">
+            
+            <div class="d-flex justify-content-between mt-3 border-bottom">
+              <p>Temporary amount</p>
+              <p>$53.98</p>
+            </div>
+
+            <div class="d-flex justify-content-between mt-3 border-bottom">
+              <p>Shipping</p>
+              <p> Gratis</p>
+            </div>
+
+            <div class="d-flex justify-content-between mt-3">
+              <p><strong>The total amount of <br> (including VAT)</strong></p>
+              <p><strong>$53.98</strong></p>
+            </div>
+
+            <!-- Boton para pagar -->
+            <a href="#" class="btn btn-primary w-100">GO TO CHECKOUT</a>
+          </div>
+          <!-- /Cuenta -->
+          
+          <!-- Acordeon -->
+          <div class="accordion mt-4" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left text-reset" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Add a discount code (optional) <i class="fas fa-chevron-down ml-4"></i>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                      </div>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Ejemplo: QWERTY789">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- /Acordeon -->
+        </div>
+        <!-- /Cuenta y acordeon -->
+      </div>
+      <!-- Div con flex -->
+
+    <!-- Delivery info -->
+    <div class='card mb-3 shadow 'style="max-width: 540px;">
+      <h6 class="ml-3 mt-2"><strong>Expected shipping deilvery </strong></h6>
+      <p class="ml-3">Thu, 12.03.-Mon, 16.03.</p>
+    </div>
+    <!-- Delivery info -->
+
+    <!-- medios de pago -->
+    <div class='card mb-3 shadow rounded'style="max-width: 540px; min-width: 320px;">
+      <h6 class="ml-3 mt-2" > <strong>We accept </strong></h6>
+      <div class="d-flex">
+        <img class="m-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR8_QI5McFsj63ZQR5hJRUkGpgjl0XQc4rfOA&usqp=CAU" alt="" style="width: 40px; height: 30px;">
+        <img class="m-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/American_Express_logo_%282018%29.svg/1000px-American_Express_logo_%282018%29.svg.png" alt="" style="width: 40px; height: 30px;">
+        <img class="m-2" src="https://www.mastercard.com.ar/content/dam/mccom/global/logos/logo-mastercard-mobile.svg" alt="" style="width: 40px; height: 30px;">
+        <img class="m-2" src="https://wwwhatsnew.com/wp-content/uploads/2018/01/PayPal-tarjeta-de-credito.jpg" alt="" style="width: 40px; height: 30px;">
+      </div>
+    </div>
+    <!-- /medios de pago -->
+  </div> 
+  <!--  Cierra el container principal -->
+ 
+  <!-- Footer -->
+  <div class="bg-primary mb-0 fixed-bottom  d-flex justify-content-center" style="width: 100%; max-height: 30px; min-height: 40px;">
+    <p class="text-white mt-1 mr-4">Maqueta e-commerce</p>
+    <div>
+      <i class="fab fa-linkedin mt-2 mr-1" style="font-size: 20px; color: white;"></i> 
+      <i class="fab fa-github mt-2 mr-1" style="font-size: 20px; color: white;"></i> 
+      <i class="fab fa-instagram mt-2 mr-1" style="font-size: 20px; color: white;"></i> 
+    </div>
+
+  </div>
+  <!-- /Footer -->
+  
+
+  
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> 
+</body>
+</html>
